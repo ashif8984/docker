@@ -150,14 +150,40 @@
 
 ---
 
+###  Useful Images
+
+<details>
+  <summary>Jenkins</summary>
+
+  ```
+  docker pull jenkins/jenkins
+  docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins/jenkins
+
+  http://localhost:8080
+  ```
+  [Jenkins on Docker](https://medium.com/@eloufirhatim/install-jenkins-using-docker-e76f41f79682)
+
+</details>
+
+
+<details>
+  <summary>ubuntu-ssh-enabled</summary>
+
+  ```
+  docker pull mmumshad/ubuntu-ssh-enabled
+  docker run -d mmumshad/ubuntu-ssh-enabled
+  docker inspect <container-id-name>
+  ssh <container-ip>
+
+  http://localhost:8080
+  ```
+  [Ubuntu on Docker](https://hub.docker.com/r/mmumshad/ubuntu-ssh-enabled)
+
+</details>
 
 
 
-
-
-
-
-
+---
 
 
 ###  My Docker Hub
